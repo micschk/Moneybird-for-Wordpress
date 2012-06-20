@@ -1,0 +1,372 @@
+/* Added for Wordpress optimization */
+.screen-reader-text {
+	position: absolute;
+	left: -9000px;
+}
+
+
+/* Original additions */
+/* Sudo Slider */
+#slider ul, #slider li{ margin: 0; padding: 0; list-style: none; position: relative; display: block; }
+
+/* Uncomment this if you wan't to only have 1 visible slide before the javascript kicks in. 
+#slider li {display:none;}	
+#slider li:first-child {display:block;}
+*/
+
+#slider, #slider li { width: 507px; overflow: hidden; }
+/* // Sudo Slider */	
+/* Numeric Navigation */
+ol { position: absolute; bottom: 15px; right: 23px; z-index: 999999; padding: 0; height: 13px;	}
+ol li { margin: 0 7px 0 0; padding: 0; float: left; list-style: none; height: 13px; line-height: 13px; }
+ol li a { float: left; height: 13px; display: block; width: 13px; text-indent: -9999px; line-height: 13px; background: url(../images/bullet.png) left top no-repeat; }
+ol li.current a { display: block; background: url(../images/bullet.png) left bottom no-repeat; }
+ol li a:focus, .prevBtn a:focus, .nextBtn a:focus{ outline: none; }
+
+.graphic, .prevBtn, .nextBtn{ margin: 0; padding: 0; display: block; overflow: hidden; text-indent: -8000px; }
+
+.prevBtn, .nextBtn { display: block; width: 31px; height: 59px; position: absolute; left: 0px; top: 99px; z-index: 1000; background:url(../images/pre_btn.png) no-repeat 0 0;cursor: pointer; }	
+.nextBtn{ left: 476px; }
+.nextBtn { background:url(../images/next_btn.png) no-repeat 0 0; }	
+.nextBtn:hover {  background:url(../images/next_btn.png) no-repeat 0 -58px; }
+.prevBtn:hover { background:url(../images/pre_btn.png) no-repeat 0 -58px; }
+
+/* Some demos use this line */
+#slider2 ul, #slider2 li{ margin: 0; padding: 0; list-style: none; position: relative; display: block; } #slider2, #slider2 li { width: 507px; overflow: hidden; }
+
+
+
+/* added for custom pages */
+hr {
+	display:block;
+	height:1px;
+	border:none;
+	border-bottom:1px solid #e5dfe9;
+	margin:10px 0 10px 0;
+}
+#infoform {
+	display:none;
+	clear: both;
+	width: 460px;
+	margin-left: 0;
+}
+p, label {
+	color:#494949;
+	line-height:24px;
+}
+.post-entry, .text-padding{
+	padding: 15px 22px 0 22px; 
+}
+.post-entry.popular {
+	margin-top:0px;
+}
+.post-entry table{
+	width:100%;
+}
+.post-entry h1 {
+	color:#651f8f;
+	font-size:18px;
+	line-height:44px;
+	font-weight:normal;
+}
+.post-entry h1 span {
+	color:#ff8f32;
+}
+
+.entertainer {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 215px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	height: 205px;
+	overflow: hidden;
+}
+.entertainer h1 {
+	color:#9b58c2;
+	font-size:17px;
+	line-height:24px;
+	margin-bottom:10px;
+}
+.entertainer .attachment {
+	display:block;
+	float:left;
+	width:101px;
+	height:101px;
+	background:url(../images/fotolijst.jpg) no-repeat 0 0 transparent;
+}
+.entertainer .righttext {
+	display:block;
+	float:right;
+	margin-left:20px;
+	width:90px;
+	color:#5b5b5b;
+	font-size:11px;
+	line-height:21px;
+}
+.entertainer .attachment img {
+	margin:10px 0 0 10px;
+	max-width:80px;
+	max-height:80px;
+}
+.entertainer a.readmore {
+	display:block;
+	position:absolute;
+	bottom:5px;
+	left:0;
+	background: url('../images/np_icon.png') right center no-repeat;
+	padding-right:17px;
+}
+
+.navigation,
+.navigation a{
+	color: #651F8F;
+	text-decoration: none;
+	font-size: 18px;
+	text-align:right;
+}
+
+.entertainer a{
+	text-decoration:none;
+}
+.entertainer a:hover{
+	text-decoration:underline;
+}
+
+
+.searchBox input.field.error {
+	color:#FF0000;
+	font-style:italic;
+}
+.searchBox input.field.error:focus {
+	color:inherit;
+	font-style:normal;
+}
+
+#infoform label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 0;
+	margin-left:10px;
+	margin-top: 4px;
+}
+#infoform label.checkbox {
+	margin-top: 5px;
+	font-weight: normal;
+	float:left;
+	margin-right:10px;
+	width:209px;
+}
+
+#infoform textarea,
+#infoform input {
+	margin-bottom: 3px;
+}
+#infoform input.field {
+	padding: 7px 10px 7px 13px;
+	width: 100%;
+	height: 18px;
+	border: 0;
+	color: #5E1A86;
+	font-size: 12px;
+	line-height: 14px;
+	background: url('../images/form_input_long.png') left top no-repeat;
+}
+#infoform div.float{
+	float:left;
+	width:50%;
+}
+
+#infoform input.field.small{
+	padding: 7px 10px 7px 13px;
+	width: 180px;
+	height: 18px;
+	border: 0;
+	color: #5E1A86;
+	font-size: 12px;
+	line-height: 14px;
+	background: url('../images/form_input.png') left top no-repeat;
+	margin-right:21px;
+}
+#infoform select.field.small{
+	padding: 7px 10px 7px 13px;
+	width: 206px;
+	height: 32px;
+	color: #5E1A86;
+	font-size: 12px;
+	line-height: 14px;
+	background: transparent url('../images/form_input_select.png') left top no-repeat;
+	-webkit-appearance: none;
+	border:none;
+}
+
+#infoform label.error {
+	color: #FF0000;
+	font-style:italic;
+}
+
+#infoform input.button {
+	float: left;
+	margin-top: 1px;
+	margin-right: 43px;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	width: 387px;
+	height: 61px;
+	border: 0;
+	cursor: pointer;
+	background: url('../images/registreren.png') left top no-repeat;
+	margin-top: 15px;
+}
+.aanvragen{
+	padding:0px;
+	padding-left:19px;
+}
+body.category .aanvragen{
+	padding-left:0px;
+}
+#infoform.aanvragen input.button{
+	background: url('../images/info_btn.png') left top no-repeat !important;
+	text-align: left;
+	padding-left: 21px;
+}
+
+.alignright{
+	float: right;
+	margin-left: 15px;
+	display: block;
+	margin-bottom: 15px;
+	margin-top:15px;
+}
+
+.bereikbaar{
+	background: url('../images/contact/bereikbaar.png') left top no-repeat;
+	width:461px;
+	height:81px;
+	margin-top:20px;
+	margin-bottom:20px;
+	position:relative;
+}
+.bereikbaar span.first,
+.bereikbaar span.second{
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+.bereikbaar span.first{
+	right: 20px;
+	top: 16px;
+	font-size: 19px;
+	color: #611D8A;
+}
+.bereikbaar span.second{
+	right: 15px;
+	top: 55px;
+}
+.bereikbaar span.second a{
+	color: #611D8A;
+	text-decoration:none;
+}
+.bereikbaar span.second a:hover{
+	text-decoration:underline;
+}
+
+.contactform {
+	width:461px;
+}
+
+.contactform .button{
+	background: url('../images/contact/input-contact-submit.png') right top no-repeat !important;
+	margin-right:0px !important;
+	width:100% !important;
+}
+.contactform label{
+	margin-bottom:25px !important;
+	float:left !important;
+	width:116px;
+}
+
+.contactform input{
+	background: url('../images/contact/input-contact.png') left top no-repeat !important;
+	width:334px;
+	height:42px;
+	float:right;
+}
+
+.contactform input.field{
+	height:27px !important;
+	width:311px !important;
+	float:right !important;
+}
+
+.contactform textarea{
+	background: url('../images/contact/input-contact-textarea.png') right top no-repeat !important;
+	border:0;
+	padding:8px 6px 10px 7px;
+	width:321px;
+	height:151px;
+	float:right;
+}
+
+#infoform textarea{
+	border:1px solid #CCC;
+	padding:8px 6px 10px 7px;
+	width:417px;
+	height:151px;
+	text-align:left;
+	-moz-border-radius-topleft: 14px;
+	-moz-border-radius-topright:14px;
+	-moz-border-radius-bottomleft:14px;
+	-moz-border-radius-bottomright:14px;
+	-webkit-border-top-left-radius:14px;
+	-webkit-border-top-right-radius:14px;
+	-webkit-border-bottom-left-radius:14px;
+	-webkit-border-bottom-right-radius:14px;
+	border-top-left-radius:14px;
+	border-top-right-radius:14px;
+	border-bottom-left-radius:14px;
+	border-bottom-right-radius:14px;
+}
+
+.global-info, .global-success, .global-warning, .global-error, .global-validation {
+	border: 1px solid;
+	margin: 10px 0px;
+	padding:15px 10px 15px 15px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+}
+.allowed{
+	color:red;
+	font-weight:bold;
+}
+
+p{
+	margin-bottom:20px;
+	clear:left;
+}
+.alignleft{
+	float: left;
+}
+.mid .alignleft{
+	margin-right: 10px;
+}
+
+.global-info {
+	color: #00529B;
+	background-color: #BDE5F8;
+}
+.global-success {
+	color: #4F8A10;
+	background-color: #DFF2BF;
+}
+.global-warning {
+	color: #9F6000;
+	background-color: #FEEFB3;
+}
+.global-error {
+	color: #D8000C;
+	background-color: #FFBABA;
+}

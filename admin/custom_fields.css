@@ -1,0 +1,74 @@
+body.plugins_page_moneybird-config .moneybird{
+	background: transparent url(../images/moneybird.png) no-repeat;
+	width: auto;
+	height: 82px;
+	padding-left: 79px;
+	padding-top: 8px;
+	text-transform:uppercase;
+}
+.moneybird span{
+	padding-top:5px;
+	padding-left: 5px;
+	display: inline-block;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+#menu-posts-mb_invoices .wp-menu-image{
+	background: transparent url(../images/moneybird-invoices.png) no-repeat center !important;
+}
+.icon32-posts-mb_invoices{
+	background: transparent url(../images/moneybird-invoices-32.png) no-repeat center !important;
+}
+
+#menu-posts-mb_companies .wp-menu-image{
+	background: transparent url(../images/moneybird-companies.png) no-repeat center !important;
+}
+.icon32-posts-mb_companies{
+	background: transparent url(../images/moneybird-companies-32.png) no-repeat center !important;
+}
+
+.custom_made_fields .description {
+  display: none;
+}
+.custom_made_fields label {
+  display: block;
+  font-weight: bold;
+  margin: 6px;
+  margin-bottom: 0;
+  margin-top: 12px;
+}
+.custom_made_fields label span {
+  display: inline;
+  font-weight: normal;
+}
+.custom_made_fields span {
+  color: #999;
+  display: block;
+}
+.custom_made_fields textarea,
+.custom_made_fields input[type='text'] {
+  margin-bottom: 3px;
+  width: 100%;
+}
+.custom_made_fields.small input[type='text'],
+.custom_made_fields.small input[type='password']{
+	width: 400px;
+	height: auto;
+	font-size: 19px;
+	color: #000;
+	padding: 5px;
+}
+.custom_made_fields h4 {
+  color: #999;
+  font-size: 1em;
+  margin: 15px 6px;
+  text-transform:uppercase;
+}
+
+#maakfactuur,
+#sendreminder
+{
+	width: 80px;
+	text-align: center;	
+}
