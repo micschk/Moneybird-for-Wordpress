@@ -1,4 +1,4 @@
-=== Akismet ===
+=== Moneybird for Wordpress ===
 Contributors: Stephan Csorba
 Tags: moneybird, moneybird voor Wordpress
 Requires at least: 3.0
