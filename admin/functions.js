@@ -8,7 +8,6 @@ jQuery(document).ready(function(){
 	sendmoneybirdreminder();
 	sendmoneybirdinvoice();
 });
-
 function createmoneybirdinvoice(){
 	jQuery('#maakfactuur').html('');
 	jQuery('#maakfactuur').bind('click', function(e){
@@ -25,7 +24,6 @@ function createmoneybirdinvoice(){
 		}
 	});
 }
-
 function sendmoneybirdreminder(){
 	jQuery('#sendreminder').html('');
 	jQuery('#sendreminder').bind('click', function(e){
