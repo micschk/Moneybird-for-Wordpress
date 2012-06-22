@@ -20,13 +20,11 @@
 			</td>
 			<td>
 				<?php
-				
 				if($meta['moneybird_factuur_online'][0]) :
 					echo '<a href="'.$meta['moneybird_factuur_online'][0].'" target="_blank">Bekijk factuur</a>';
 				else :
 					echo 'Nog geen factuur beschikbaar';
 				endif;
-				
 				?>	
 			</td>
 			<td>
