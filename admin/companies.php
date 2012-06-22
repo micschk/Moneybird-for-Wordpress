@@ -1,5 +1,5 @@
 <div class="custom_subitems">
-	<?php if(count($subitems->posts) > 0) { ?>
+	<?php if(count($subitems->posts) > 0) : ?>
 	<table>
 		<tr>
 			<td style="text-align:left; padding-right:10px;">Moneybird klantnr.</td>
@@ -9,7 +9,7 @@
 			<td style="text-align:left; padding-right:10px;">Postcode</td>
 			<td style="text-align:left; padding-right:10px;">Website</td>
 		</tr>
-		<?php foreach($subitems->posts as $subitem) { ?>
+		<?php foreach($subitems->posts as $subitem) : ?>
 			<?php $meta = get_post_custom($subitem->ID); ?>
 		<tr>
 			<td style="text-align:left; padding-right:10px;">
@@ -34,9 +34,9 @@
 				<?php endif; ?>
 			</td>
 		</tr>
-		<?php } ?>
+		<?php endforeach; ?>
 	</table>
-	<?php } else { ?>
+	<?php else : ?>
 	<p>Er zijn nog geen geregistreerde bedrijven.</p>
-	<?php } ?>
+	<?php endif; ?>
 </div>
