@@ -10,9 +10,7 @@ jQuery(document).ready(function(){
 });
 
 function createmoneybirdinvoice(){
-	
 	jQuery('#maakfactuur').html('');
-	
 	jQuery('#maakfactuur').bind('click', function(e){
 		e.preventDefault();
 		jQuery('.ajax-loading').css('visibility','visible');
@@ -29,9 +27,7 @@ function createmoneybirdinvoice(){
 }
 
 function sendmoneybirdreminder(){
-	
 	jQuery('#sendreminder').html('');
-	
 	jQuery('#sendreminder').bind('click', function(e){
 		e.preventDefault();
 		postid = jQuery(this).attr('rel');
@@ -45,11 +41,8 @@ function sendmoneybirdreminder(){
 		}
 	});
 }
-
 function sendmoneybirdinvoice(){
-	
 	jQuery('#verstuurfactuur').html('');
-	
 	jQuery('#verstuurfactuur').bind('click', function(e){
 		e.preventDefault();
 		postid = jQuery(this).attr('rel');
